@@ -1,5 +1,101 @@
-هدية لك 🌸 body { text-align: center; font-family: Arial, sans-serif; background-color: #ffe6f0; margin-top: 100px; } h1 { color: #ff3399; } p { color: #660066; font-size: 20px; } audio { margin-top: 20px; } 
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هدية عيد ميلاد لمستر زايد</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #0d0d0d;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
-🌸 إليك هذه الهدية 🌸
+  #content {
+    display: none;
+  }
 
-أتمنى لك يوم رائع ومليء بالفرحة والسعادة!
+  h1 {
+    font-size: 4em;
+    margin-top: 50px;
+    animation: rainbowText 5s infinite;
+  }
+
+  p {
+    font-size: 1.8em;
+    margin: 20px;
+    animation: rainbowText 5s infinite;
+  }
+
+  @keyframes rainbowText {
+    0% { color: #ff0000; }
+    14% { color: #ff7f00; }
+    28% { color: #ffff00; }
+    42% { color: #00ff00; }
+    57% { color: #0000ff; }
+    71% { color: #4b0082; }
+    85% { color: #8f00ff; }
+    100% { color: #ff0000; }
+  }
+
+  .password-box {
+    margin-top: 100px;
+  }
+
+  input[type="password"] {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .audio-box {
+    margin-top: 20px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="password-box">
+  <h2>ادخل الباسورد لفتح الهدية 🎁</h2>
+  <input type="password" id="passwordInput" placeholder="الباسورد">
+  <button onclick="checkPassword()">فتح الهدية</button>
+</div>
+
+<div id="content">
+  <h1>🎉 عيد ميلاد سعيد زايد 🎉</h1>
+  <p>كل سنة وانت طيب ومميز يا زايد 🌟</p>
+  <p>نتمنى لك أيام مليانة فرحة وسعادة! 🎂💖</p>
+
+  <div class="audio-box">
+    <audio controls autoplay loop>
+      <source src="happybirthday.mp3" type="audio/mpeg">
+      متصفحك لا يدعم تشغيل الصوت.
+    </audio>
+  </div>
+</div>
+
+<script>
+function checkPassword() {
+  const input = document.getElementById('passwordInput').value;
+  if(input === '24/2') {
+    document.querySelector('.password-box').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  } else {
+    alert('الباسورد غلط! حاول تاني 😅');
+  }
+}
+</script>
+
+</body>
+</html>
