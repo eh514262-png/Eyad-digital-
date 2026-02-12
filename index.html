@@ -3,31 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>هدية عيد ميلاد لمستر زايد</title>
+<title>هدية عيد ميلاد لمستر زايد 🎉</title>
 <style>
   body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background: #0d0d0d;
-    color: white;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     overflow-x: hidden;
+  }
+
+  .password-box {
+    margin-top: 50px;
+  }
+
+  input[type="password"] {
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff3399;
+  }
+
+  button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff3399;
+    color: white;
+    box-shadow: 0 0 10px #ff3399;
+    transition: transform 0.2s;
+  }
+
+  button:hover {
+    transform: scale(1.1);
   }
 
   #content {
     display: none;
+    margin-top: 30px;
   }
 
   h1 {
-    font-size: 4em;
-    margin-top: 50px;
+    font-size: 3em;
     animation: rainbowText 5s infinite;
   }
 
   p {
-    font-size: 1.8em;
-    margin: 20px;
+    font-size: 1.5em;
     animation: rainbowText 5s infinite;
   }
 
@@ -42,48 +68,69 @@
     100% { color: #ff0000; }
   }
 
-  .password-box {
-    margin-top: 100px;
-  }
-
-  input[type="password"] {
-    font-size: 1.2em;
-    padding: 10px;
-  }
-
-  button {
-    font-size: 1.2em;
-    padding: 10px 20px;
-    margin-left: 10px;
+  .music-button {
+    font-size: 2em;
+    background: #ff66cc;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 30px;
+    color: white;
     cursor: pointer;
-  }
-
-  .audio-box {
     margin-top: 20px;
+    box-shadow: 0 0 15px #ff3399;
+    transition: transform 0.2s;
   }
 
+  .music-button:hover {
+    transform: scale(1.2);
+  }
+
+  .emojis {
+    font-size: 2em;
+    margin-top: 20px;
+    animation: floatUp 5s infinite;
+  }
+
+  @keyframes floatUp {
+    0% { transform: translateY(0); opacity: 0.8; }
+    50% { transform: translateY(-20px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.8; }
+  }
+
+  .footer {
+    margin-top: 50px;
+    font-size: 1em;
+    color: #660066;
+  }
 </style>
 </head>
 <body>
 
 <div class="password-box">
-  <h2>ادخل الباسورد لفتح الهدية 🎁</h2>
+  <h2>افتح الباسورد يا مستر 🎁</h2>
   <input type="password" id="passwordInput" placeholder="الباسورد">
   <button onclick="checkPassword()">فتح الهدية</button>
 </div>
 
 <div id="content">
-  <h1>🎉 عيد ميلاد سعيد زايد 🎉</h1>
-  <p>كل سنة وانت طيب ومميز يا زايد 🌟</p>
+  <h1>🎉 عيد ميلاد سعيد مستر زايد 🎉</h1>
+  <p>كل سنة وانت طيب ومميز يا مستر زايد 🌟</p>
   <p>نتمنى لك أيام مليانة فرحة وسعادة! 🎂💖</p>
 
-  <div class="audio-box">
-    <audio controls autoplay loop>
-      <source src="happybirthday.mp3" type="audio/mpeg">
-      متصفحك لا يدعم تشغيل الصوت.
-    </audio>
-  </div>
+  <!-- زر الأغنية -->
+  <button class="music-button" onclick="playMusic()">افتح الأغنية 🎵</button>
+
+  <!-- ملف الأغنية -->
+  <audio id="birthdayAudio" loop>
+    <source src="happybirthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- إيموجي قلوب وتورتة -->
+  <div class="emojis">❤️🎂💖🎉🧁🎈</div>
 </div>
+
+<!-- حقوق الصفحة -->
+<div class="footer">جميع الحقوق محفوظة © أياد</div>
 
 <script>
 function checkPassword() {
@@ -94,6 +141,10 @@ function checkPassword() {
   } else {
     alert('الباسورد غلط! حاول تاني 😅');
   }
+}
+
+function playMusic() {
+  document.getElementById('birthdayAudio').play();
 }
 </script>
 
