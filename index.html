@@ -1,152 +1,76 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!-- احفظ الملف باسم index.html --><!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>هدية عيد ميلاد لمستر زايد 🎉</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    overflow-x: hidden;
-  }
-
-  .password-box {
-    margin-top: 50px;
-  }
-
-  input[type="password"] {
-    font-size: 1.2em;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #ff3399;
-  }
-
-  button {
-    font-size: 1.2em;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    background-color: #ff3399;
-    color: white;
-    box-shadow: 0 0 10px #ff3399;
-    transition: transform 0.2s;
-  }
-
-  button:hover {
-    transform: scale(1.1);
-  }
-
-  #content {
-    display: none;
-    margin-top: 30px;
-  }
-
-  h1 {
-    font-size: 3em;
-    animation: rainbowText 5s infinite;
-  }
-
-  p {
-    font-size: 1.5em;
-    animation: rainbowText 5s infinite;
-  }
-
-  @keyframes rainbowText {
-    0% { color: #ff0000; }
-    14% { color: #ff7f00; }
-    28% { color: #ffff00; }
-    42% { color: #00ff00; }
-    57% { color: #0000ff; }
-    71% { color: #4b0082; }
-    85% { color: #8f00ff; }
-    100% { color: #ff0000; }
-  }
-
-  .music-button {
-    font-size: 2em;
-    background: #ff66cc;
-    border-radius: 50px;
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
-    box-shadow: 0 0 15px #ff3399;
-    transition: transform 0.2s;
-  }
-
-  .music-button:hover {
-    transform: scale(1.2);
-  }
-
-  .emojis {
-    font-size: 2em;
-    margin-top: 20px;
-    animation: floatUp 5s infinite;
-  }
-
-  @keyframes floatUp {
-    0% { transform: translateY(0); opacity: 0.8; }
-    50% { transform: translateY(-20px); opacity: 1; }
-    100% { transform: translateY(0); opacity: 0.8; }
-  }
-
-  .footer {
-    margin-top: 50px;
-    font-size: 1em;
-    color: #660066;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لايف كن إنسان</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+        }
+        h1 {
+            font-size: 32px;
+        }
+        .content {
+            padding: 20px;
+        }
+        a {
+            color: #00ffd5;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 600px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
-<body>
-
-<div class="password-box">
-  <h2>افتح الباسورد يا مستر 🎁</h2>
-  <input type="password" id="passwordInput" placeholder="الباسورد">
-  <button onclick="checkPassword()">فتح الهدية</button>
+<body><header>
+    <h1>✨ لايف اليوم الساعة 12 مساء ✨</h1>
+    <h2>بعنوان: كن إنسان</h2>
+</header><div class="content"><div class="card">
+    <h3>لينك أحمد ماهر</h3>
+    <a href="https://www.tiktok.com/@ahmedmaher_111?_r=1&_t=ZS-964WMffONIi" target="_blank">اضغط هنا للدخول</a>
 </div>
 
-<div id="content">
-  <h1>🎉 عيد ميلاد سعيد مستر زايد 🎉</h1>
-  <p>كل سنة وانت طيب ومميز يا مستر زايد 🌟</p>
-  <p>نتمنى لك أيام مليانة فرحة وسعادة! 🎂💖</p>
-
-  <!-- زر الأغنية -->
-  <button class="music-button" onclick="playMusic()">افتح الأغنية 🎵</button>
-
-  <!-- ملف الأغنية -->
-  <audio id="birthdayAudio" loop>
-    <source src="happybirthday.mp3" type="audio/mpeg">
-  </audio>
-
-  <!-- إيموجي قلوب وتورتة -->
-  <div class="emojis">❤️🎂💖🎉🧁🎈</div>
+<div class="card">
+    <h3>📿 أدعية جميلة</h3>
+    <p>
+        اللهم ارزقنا راحة البال، وطمأنينة القلب 🌙<br>
+        اللهم اجعلنا من الصالحين 🤲<br>
+        اللهم اغفر لنا ولوالدينا ❤️
+    </p>
 </div>
 
-<!-- حقوق الصفحة -->
-<div class="footer">جميع الحقوق محفوظة © أياد</div>
+<div class="card">
+    <h3>📢 رسالة من المضيف</h3>
+    <p>
+        السلام عليكم ورحمة الله وبركاته 🤍<br>
+        أهلاً بيكم جميعًا في لايف <strong>"كن إنسان"</strong>، نسأل الله أن يكون لقاء خير وبركة علينا جميعًا.<br><br>
+        قال الله تعالى:<br>
+        <strong>"إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالإِحْسَانِ"</strong><br><br>
+        ومن هنا كانت فكرتنا… إننا نرجع لمعاني الإنسانية الحقيقية، الرحمة، الصدق، وحب الخير للناس.<br><br>
+        نسأل الله أن يجعل هذا اللقاء سبب في راحة القلوب، وأن يرزقنا وإياكم الهداية والثبات 🤲<br>
+        اللهم اجعلنا من الذين يستمعون القول فيتبعون أحسنه.<br><br>
+        نورتونا وشرفتونا 💙
+    </p>
+</div>
 
-<script>
-function checkPassword() {
-  const input = document.getElementById('passwordInput').value;
-  if(input === '24/2') {
-    document.querySelector('.password-box').style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-  } else {
-    alert('الباسورد غلط! حاول تاني 😅');
-  }
-}
-
-function playMusic() {
-  document.getElementById('birthdayAudio').play();
-}
-</script>
-
-</body>
-</html>
+</div></body>
+</html>.
